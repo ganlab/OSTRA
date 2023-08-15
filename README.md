@@ -59,4 +59,4 @@ Please considering cite our paper if you find this work useful!
 ```
 
 ## :clap: Acknowledgements
-This work is based on [Track Anything](https://github.com/gaomingqi/Track-Anything/tree/master), [Segment and Track Anything](https://github.com/z-x-yang/Segment-and-Track-Anything), [Colmap](https://github.com/colmap/colmap) and [Open3D](https://github.com/isl-org/Open3D).
+This work is based on [Segment Anything](https://github.com/facebookresearch/segment-anything),  [Track Anything](https://github.com/gaomingqi/Track-Anything/tree/master), [Segment and Track Anything](https://github.com/z-x-yang/Segment-and-Track-Anything), [Colmap](https://github.com/colmap/colmap) and [Open3D](https://github.com/isl-org/Open3D).
