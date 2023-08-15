@@ -48,7 +48,15 @@ Two samples of complex object segmentation:
 ## :book:Citation
 Please considering cite our paper if you find this work useful!
 ```
+@misc{xu2023stop,
+      title={A One Stop 3D Target Reconstruction and multilevel Segmentation Method}, 
+      author={Jiexiong Xu and Weikun Zhao and Zhiyan Tang and Xiangchao Gan},
+      year={2023},
+      eprint={2308.06974},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV}
+}
 ```
 
 ## :clap: Acknowledgements
-This work is based on [Track Anything](https://github.com/gaomingqi/Track-Anything/tree/master), [Segment and Track Anything](https://github.com/z-x-yang/Segment-and-Track-Anything) and [Colmap](https://github.com/colmap/colmap).
+This work is based on [Track Anything](https://github.com/gaomingqi/Track-Anything/tree/master), [Segment and Track Anything](https://github.com/z-x-yang/Segment-and-Track-Anything), [Colmap](https://github.com/colmap/colmap) and [Open3D](https://github.com/isl-org/Open3D).
