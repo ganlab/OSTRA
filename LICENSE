@@ -2,20 +2,10 @@ MIT License
 
 Copyright (c) 2023 ganlab
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+LICENCE
+Free for non-profit research purposes. Please contact authors otherwise. The program itself may not be modified in any way and no redistribution is allowed.
+No condition is made or to be implied, nor is any warranty given or to be implied, as to the accuracy of IMR/DENOM, or that it will be suitable for any particular purpose or for use under any specific conditions, or that the content or use of IMR/DENOM will not constitute or result in infringement of third-party rights.
+The software is developed by following author(s) and supervised by Prof. Xiangchao Gan(gan@njau.edu.cn)
+Authors:
+xu_jx@stu.njau.edu.cn (framework and reconstruction module)
+zhaowk@stu.njau.edu.cn (VOS module)
