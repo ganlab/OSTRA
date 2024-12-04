@@ -68,7 +68,7 @@ This work is based on [Segment Anything](https://github.com/facebookresearch/seg
 Authors:
 
 Jiexiong Xu 
-xu_jx@stu.njau.edu.cn 
+xujx@stu.njau.edu.cn 
 work: framework and reconstruction module
 
 Weikun Zhao 
