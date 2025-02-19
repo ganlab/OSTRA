@@ -6,6 +6,10 @@
 
 **You can check our detailed tutorials [here](./doc/tutorials.md)!**
 
+**SAM-Adapter** Users can utilize SAM-Adapter to generate masks, replacing VOS for mask generation. The adapter can improve SAM's segmentation performance on rice panicles by fine-tuning it with downstream training. We use Tianrun Chen's work as the backbone for SAM-Adapter.
+
+**You can check our detailed tutorials [here](https://github.com/tianrun-chen/SAM-Adapter-PyTorch)!**
+
 ## :computer:Getting Started
 ### Clone OSTRA
 This project is tested under python3.9, cuda11.5 and pytorch1.11.0. An equivalent or higher version is recommended.
@@ -63,7 +67,7 @@ Free for non-profit research purposes. Please contact authors otherwise. The pro
 No condition is made or to be implied, nor is any warranty given or to be implied, as to the accuracy of OSTRA, or that it will be suitable for any particular purpose or for use under any specific conditions, or that the content or use of OSTRA will not constitute or result in infringement of third-party rights.
 
 ## :clap: Acknowledgements
-This work is based on [Segment Anything](https://github.com/facebookresearch/segment-anything),  [Track Anything](https://github.com/gaomingqi/Track-Anything/tree/master), [Segment and Track Anything](https://github.com/z-x-yang/Segment-and-Track-Anything), [Colmap](https://github.com/colmap/colmap) and [Open3D](https://github.com/isl-org/Open3D). The software is developed by following author(s) and supervised by Prof. Xiangchao Gan(gan@njau.edu.cn)
+This work is based on [Segment Anything](https://github.com/facebookresearch/segment-anything),  [Track Anything](https://github.com/gaomingqi/Track-Anything/tree/master), [Segment and Track Anything](https://github.com/z-x-yang/Segment-and-Track-Anything), [Colmap](https://github.com/colmap/colmap), [Open3D](https://github.com/isl-org/Open3D) and [SAM-Adapter-backbone](https://github.com/tianrun-chen/SAM-Adapter-PyTorch). The software is developed by following author(s) and supervised by Prof. Xiangchao Gan(gan@njau.edu.cn)
 
 Authors:
 
