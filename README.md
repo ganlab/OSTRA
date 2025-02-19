@@ -49,6 +49,10 @@ Two samples of complex object segmentation:
 <img src="./assets/result.gif" width="90%"/>
 </div>
 
+<div align=center class='img_top'>
+<img src="./assets/rice.jpg" width="50%"/>
+</div>
+
 ## :book:Citation
 Please considering cite our paper if you find this work useful!
 ```
