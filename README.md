@@ -42,15 +42,15 @@ python app.py --device cuda:0
 
 Two samples of complex object segmentation:
 <div align=center class='img_top'>
+<img src="./assets/rice.jpg" width="50%"/>
+</div>
+
+<div align=center class='img_top'>
 <img src="./assets/top.jpg" width="90%"/>
 </div>
 
 <div align=center class='img_top'>
 <img src="./assets/result.gif" width="90%"/>
-</div>
-
-<div align=center class='img_top'>
-<img src="./assets/rice.jpg" width="50%"/>
 </div>
 
 ## :book:Citation
