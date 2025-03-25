@@ -1,12 +1,14 @@
 # OSTRA
 
-**OSTRA** is a novel segmentation-then-reconstruction method for segmenting complex open objects in 3D point clouds. This method uses a Segment-Anything Model (SAM) to segment target objects and video object segmentation (VOS) technology to continuously track video frame segmentation targets. Our pipeline enables a complete segmentation process from videos to 3D cloud points and meshes in different level(semantic segmentation, instance segmentation and part segmentation).
+**OSTRA** is an One Stop 3D multi-target reconstruction and segmentation framework. It takes the multview images (or videos) and segmentation of targets in each image as the input, generates targets’ 3D models embedded with rich multi-scale segmentation information. 
+      We also provide a pipeline to segment objects consistently. Users can choose the Segment-Anything Model (SAM) or the video object segmentation (VOS) approach. SAM can generate good segmentation most of time, but for challenging tasks such as plant panicle segmentation, we suggeste to use a trained SAM-Adapter. 
 
 
+**VOS**: Users can utilize VOS by 
 
 **You can check our detailed tutorials [here](./doc/tutorials.md)!**
 
-**SAM-Adapter** Users can utilize SAM-Adapter to generate masks, replacing VOS for mask generation. The adapter can improve SAM's segmentation performance on rice panicles by fine-tuning it with downstream training. We use Tianrun Chen's work as the backbone for SAM-Adapter.
+**SAM-Adapter** We use Tianrun Chen's work as the backbone for SAM-Adapter.  The adapter here can improve SAM's segmentation performance on rice panicles by fine-tuning it with downstream training. Users can train their own adapter for specific objects.
 
 **You can check our detailed tutorials [here](https://github.com/tianrun-chen/SAM-Adapter-PyTorch)!**
 
