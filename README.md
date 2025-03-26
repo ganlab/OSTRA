@@ -6,7 +6,7 @@
 
 **VOS**: We use the methods from Yang et al. and Cheng et al. as the foundation for VOS. The VOS approach enhances SAM’s ability to segment and track objects in videos. Users can select suitable VOS models tailored to their specific tasks.
 
-**You can check detailed tutorials [here](./doc/tutorials.md)!**
+**You can check detailed tutorials [here](./VOS/doc/tutorials.md)!**
 
 **SAM-Adapter** We use Tianrun Chen's work as the backbone for SAM-Adapter.  The adapter here can improve SAM's segmentation performance on rice panicles by fine-tuning it with downstream training. Users can train their own adapter for specific objects.
 
