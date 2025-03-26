@@ -4,7 +4,7 @@
       We also provide a pipeline to segment objects consistently. Users can choose the Segment-Anything Model (SAM) or the video object segmentation (VOS) approach. SAM can generate good segmentation most of time, but for challenging tasks such as plant panicle segmentation, we suggeste to use a trained SAM-Adapter. 
 
 
-**VOS**: We use the methods from Yang and Cheng as the foundation for VOS. The VOS approach enables the generation of continuous masks across video frames.. Users can select suitable VOS models tailored to their specific tasks.
+**VOS**: We use the methods from Yang and Cheng as the foundation for VOS. The VOS approach enables the generation of continuous masks across video frames. Users can select suitable VOS models tailored to their specific tasks.
 
 **You can check detailed tutorials [here](./VOS/doc/tutorials.md)!**
 
