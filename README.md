@@ -27,17 +27,15 @@ pip install -r requirements.txt
 ### Install Colmap
 Our reconstruction process is based on Colmap. Please follow the instruction and install [Colmap](https://github.com/colmap/colmap) first.
 
-### Prepare Model
-All these models are required for OSTRA:
-SAM: the default model is [sam_vit_b_01ec64.pth](https://dl.fbaipublicfiles.com/segment_anything/sam_vit_b_01ec64.pth)
-DeAOT:the default model is [R50_DeAOTL_PRE_YTB_DAV.pth](https://drive.google.com/file/d/1QoChMkTVxdYZ_eBlZhK2acq9KMQZccPJ/view)
-XMem：the default model is [XMem-s012.pth](https://github.com/hkchengrex/XMem/releases/download/v1.0/XMem-s012.pth)
-Grounding-DINO:the default model is [groundingdino_swint_ogc.pth](https://huggingface.co/ShilongLiu/GroundingDINO/resolve/main/groundingdino_swint_ogc.pth)
-
-### WebUI
-We developed WebUI that user can easily access.
+### Target reconstruction
+Colmap pipeline
 ```shell
-python app.py --device cuda:0
+python reconstruction_Colmap.py
+```
+
+Colmap + OpenMVS pipline
+```shell
+python reconstruction_OpenMVS.py
 ```
 
 ## :film_projector: Demo
