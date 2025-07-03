@@ -277,7 +277,7 @@ def calculate_depth(depth_images_list, images_list):
     point3d_depth_list = []
     for depth_image in depth_images_list:
         name = depth_image.NAME.rstrip(".png") + ".jpg"
-        # name = r'1/' + name # perfolder
+        name = r'0/' + name # perfolder
         RGB_need_names.append(name)
         dep_dict[name] = depth_image.Data
     for rgb_image in images_list:
