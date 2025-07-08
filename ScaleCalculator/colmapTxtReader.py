@@ -56,6 +56,7 @@ class Points3dDepth:
         self.ERROR_list = []
         self.distance_list = []
         self.scaling_list = []
+        self.CAMERA_ID = -1
 
 
 class Image:
@@ -277,7 +278,7 @@ def calculate_depth(depth_images_list, images_list):
     point3d_depth_list = []
     for depth_image in depth_images_list:
         name = depth_image.NAME.rstrip(".png") + ".jpg"
-        # name = r'1/' + name # perfolder
+        name = r'0/' + name # perfolder
         RGB_need_names.append(name)
         dep_dict[name] = depth_image.Data
     for rgb_image in images_list:
@@ -288,6 +289,7 @@ def calculate_depth(depth_images_list, images_list):
         data = dep_dict[need_name]
         point3d_depth = Points3dDepth()
         point3d_depth.IMAGE_ID = image_dict[need_name].IMAGE_ID
+        point3d_depth.CAMERA_ID = image_dict[need_name].CAMERA_ID
         for point2d in image_dict[need_name].points2d_list:
             if int(point2d.POINT3D_ID) == -1:
                 continue
@@ -451,9 +453,9 @@ def get_Intrinsics(camera_id, camera_list):
     return float(info_camera.P1), float(info_camera.P2), int(info_camera.P3), int(info_camera.P4)
 
 
-def get_Extrinsics(camera_id):
+def get_Extrinsics(img_id):
     images_list = read_images_txt(txt_path + "images.txt")
-    info_image = [img for img in images_list if img.CAMERA_ID == camera_id][0]
+    info_image = [img for img in images_list if img.IMAGE_ID == img_id][0]
     return float(info_image.QW), float(info_image.QX), float(info_image.QY), float(info_image.QZ), float(
         info_image.TX), float(info_image.TY), float(info_image.TZ)
 

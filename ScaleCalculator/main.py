@@ -80,6 +80,12 @@ def get_suit_bandwidth(x_train):
     grid.fit(x_train[:, np.newaxis])
     return grid.best_params_["bandwidth"]
 
+def get_suit_bandwidth_Scott(x_train):
+    n = len(x_train)
+    sigma = np.std(x_train, ddof=1)
+    # Scott's rule: h = sigma * n^(-1/(d+4)), d=1
+    return sigma * n ** (-1/5)
+
 
 def traverse_folders(root_path):
     filtered_folders = os.listdir(root_path)
@@ -89,7 +95,6 @@ def traverse_folders(root_path):
 def scale_calculate(path):
     config = configparser.ConfigParser()
     config.read('config.ini')
-    # Ctr.init_path(config.get('path_section', 'project_path'))
     Ctr.init_path(path)
     file_type = int(config.get('process_section', 'file_type'))
     bandwidth_auto = int(config.get('process_section', 'bandwidth_auto'))
@@ -105,9 +110,10 @@ def scale_calculate(path):
     point3d_depth_list = Ctr.add_xyzerrorinfo_to_point3d_depth_list(point3d_depth_list, points3d_list)
 
     for point3d_depth in point3d_depth_list:
-        camera_id = Ctr.get_CameraId_from_imageId(point3d_depth.IMAGE_ID, images_list)
+        # camera_id = Ctr.get_CameraId_from_imageId(point3d_depth.IMAGE_ID, images_list)
+        camera_id = point3d_depth.CAMERA_ID
         fx, fy, cx, cy = Ctr.get_Intrinsics(camera_id, camera_list)
-        qw, qx, qy, qz, tx, ty, tz = Ctr.get_Extrinsics(camera_id)
+        qw, qx, qy, qz, tx, ty, tz = Ctr.get_Extrinsics(point3d_depth.IMAGE_ID)
         for index in range(len(point3d_depth.x_list)):
             d = calculate_distance(fx, fy, cx, cy, qw, qx, qy, qz, tx, ty, tz, point3d_depth.x_list[index],
                                    point3d_depth.y_list[index], point3d_depth.z_list[index])
@@ -132,7 +138,8 @@ def scale_calculate(path):
 
     if bandwidth_auto == 0:
         print("Start calculating bandwidth......")
-        bandwidth = get_suit_bandwidth(x_train)
+        bandwidth = get_suit_bandwidth(x_train) #slow
+        # bandwidth = get_suit_bandwidth_Scott(x_train) # quick
         print(f"bandwidth_auto:{bandwidth}")
     elif bandwidth_auto == 1:
         bandwidth = bandwidth_manual
@@ -191,5 +198,6 @@ def scale_calculate(path):
 
 if __name__ == '__main__':
     path = r'your/path/'
+    # path = r'D:/tiller 3D/ScaleCalculator/sample/T39/'
     scale = scale_calculate(path)
     print(scale)
