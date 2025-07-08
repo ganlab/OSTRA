@@ -1,4 +1,7 @@
 # ScaleCalculator
+<div align=center class='img_top'>
+<img src="../assets/scripts.jpg" width="90%"/>
+</div>
 The ScaleCalculator can adjust the relative scale of 3D models reconstructed during the process by integrating depth images, transforming them into actual-size 3D models.
 
 You can run the script to perform depth-based scale estimation. 
