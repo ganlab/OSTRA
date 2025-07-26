@@ -64,6 +64,19 @@ Please considering cite our paper if you find this work useful!
       archivePrefix={arXiv},
       primaryClass={cs.CV}
 }
+
+@Article{agronomy15081803,
+      AUTHOR = {Xu, Jiexiong and Lee, Jiyoung and Jiang, Gang and Gan, Xiangchao},
+      TITLE = {High-Resolution 3D Reconstruction of Individual Rice Tillers for Genetic Studies},
+      JOURNAL = {Agronomy},
+      VOLUME = {15},
+      YEAR = {2025},
+      NUMBER = {8},
+      ARTICLE-NUMBER = {1803},
+      URL = {https://www.mdpi.com/2073-4395/15/8/1803},
+      ISSN = {2073-4395},
+      DOI = {10.3390/agronomy15081803}
+}
 ```
 
 ## License
