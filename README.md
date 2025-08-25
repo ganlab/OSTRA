@@ -56,7 +56,7 @@ Two samples of complex object segmentation:
 ## :book:Citation
 Please considering cite our paper if you find this work useful!
 ```
-
+{
 }
 
 ```
