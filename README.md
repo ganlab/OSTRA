@@ -56,7 +56,16 @@ Two samples of complex object segmentation:
 ## :book:Citation
 Please considering cite our paper if you find this work useful!
 ```
-{
+@article{Xu2026,
+  author    = {Xu, Jiexiong and Lee, Jiyoung and Gan, Xiangchao},
+  title     = {High-density field-based 3D reconstruction of rice architecture across diverse cultivars for genome-wide association studies},
+  journal   = {Plant Methods},
+  volume    = {22},
+  number    = {1},
+  pages     = {21},
+  year      = {2026},
+  doi       = {10.1186/s13007-026-01499-5},
+  url       = {https://doi.org/10.1186/s13007-026-01499-5}
 }
 
 ```
